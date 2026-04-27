@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Farel Azam Fauzan</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 50px;
+        }
+
+        .home {
+            text-align: center;
+        }
+
+        .home h1 {
+            font-size: 40px;
+        }
+
+        .btn {
+            background: #38bdf8;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+            color: black;
+        }
+
+        /* FOTO PROFIL */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #38bdf8;
+            object-fit: cover;
+        }
+
+        /* SKILLS & PROJECT */
+        .skills, .projects {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            width: 220px;
+            text-align: center;
+        }
+
+        /* FOTO PROJECT */
+        .project-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+
+        .project-img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Portfolio Saya</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Project</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="home">
+    <img src="Profil.jpeg" class="profile-img">
+    <h1>Halo, Saya Farel Azam Fauzan 👋</h1>
+    <p>Network Engineer & IoT Enthusiast</p>
+    <button class="btn" onclick="scrollToProject()">Lihat Portfolio</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>Tentang Saya</h2>
+    <p>
+        Saya adalah lulusan siswa SMK jurusan Teknik Komputer dan Jaringan (TKJ) yang memiliki minat besar dalam bidang jaringan komputer, fiber optik, dan pengembangan sistem berbasis IoT. Saya memiliki pengalaman dalam konfigurasi jaringan menggunakan Mikrotik, serta memahami dasar-dasar instalasi dan troubleshooting jaringan fiber optik seperti ODP dan ONT. Selain itu, saya juga aktif mengembangkan proyek berbasis ESP32 seperti Environmental Monitoring System dan sistem otomatis berbasis sensor. Saya memiliki semangat belajar yang tinggi, disiplin, dan siap berkontribusi di dunia teknologi.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skill Saya</h2>
+    <div class="skills">
+        <div class="card">Mikrotik</div>
+        <div class="card">Server</div>
+        <div class="card">Fiber Optic</div>
+        <div class="card">ESP32 / IoT</div>
+    </div>
+</section>
+
+<!-- PROJECT -->
+<section id="projects">
+    <h2>Project Saya</h2>
+    <div class="projects">
+
+        <div class="card">
+            <img src="FO.jpeg" class="project-img">
+            <h4>Simulasi LKS</h4>
+            <p>Terminasi + Splicing + Redaman</p>
+        </div>
+
+        <div class="card">
+            <img src="ELEKTRO.jpeg" class="project-img">
+            <h4>Smart Waste Sorting</h4>
+            <p>Pemilah sampah otomatis</p>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Kontak</h2>
+    <p>Email: farelazamfaujan@gmail.com</p>
+    <p>WhatsApp: 08817476415</p>
+</section>
+
+<footer>
+    <p>© 2026 Farel Azam Fauzan Portfolio</p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+function scrollToProject() {
+    document.getElementById("projects").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+</script>
+
+</body>
+</html>
